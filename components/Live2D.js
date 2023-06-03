@@ -26,13 +26,13 @@ export default function Live2D() {
     return <></>
   }
 
-  return <canvas id="live2d" className='cursor-pointer' width="280" height="250" onClick={handleClick} alt='切换主题' title='切换主题' />
+  return <canvas id="live2d" className='cursor-pointer' width="280" height="360" onClick={handleClick} alt='不要点我' title='不要点我' />
 }
 
 /**
  * 加载宠物
  */
-function initLive2D() {
+function initLive2D() { 
   window.removeEventListener('scroll', initLive2D)
   setTimeout(() => {
     // 加载 waifu.css live2d.min.js waifu-tips.js
