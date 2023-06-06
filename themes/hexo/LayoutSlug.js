@@ -47,7 +47,7 @@ export const LayoutSlug = props => {
       showTag={false}
       floatSlot={floatSlot}
     >
-      <div className="w-full lg:hover:shadow lg:border rounded-t-xl lg:rounded-xl lg:px-2 lg:py-4 bg-white dark:bg-hexo-black-gray dark:border-black article">
+      <div className="w-full lg:hover:shadow-lg duration-300 lg:border rounded-t-xl lg:rounded-xl lg:px-2 lg:py-4 bg-white dark:bg-hexo-black-gray dark:border-black article">
         {lock && <ArticleLock validPassword={validPassword} />}
 
         {!lock && <div id="container" className="overflow-x-auto flex-grow mx-auto md:w-full md:px-5 ">
@@ -58,8 +58,8 @@ export const LayoutSlug = props => {
               {post && <NotionPage post={post} />}
             </section>
 
-            <section className="px-1 py-2 my-1 text-sm font-light overflow-auto text-gray-600  dark:text-gray-400">
-              {/* 文章内嵌广告 */}
+            {/* 文章内嵌广告 */}
+            {/* <section className="px-1 py-2 my-1 text-sm font-light overflow-auto text-gray-600  dark:text-gray-400">
               <ins className="adsbygoogle"
                 style={{ display: 'block', textAlign: 'center' }}
                 data-adtest="on"
@@ -67,7 +67,7 @@ export const LayoutSlug = props => {
                 data-ad-format="fluid"
                 data-ad-client="ca-pub-2708419466378217"
                 data-ad-slot="3806269138" />
-            </section>
+            </section> */}
 
             {/* 分享 */}
             <ShareBar post={post} />

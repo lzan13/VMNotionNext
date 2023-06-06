@@ -29,13 +29,13 @@ export default function HeaderArticle({ post, siteInfo }) {
             data-aos-duration="300"
             data-aos-once="true"
             data-aos-anchor-placement="top-bottom"
-            className="bg-black bg-opacity-70 absolute top-0 w-full h-96 py-10 flex justify-center items-center ">
+            className="bg-black bg-opacity-30 absolute top-0 w-full h-96 py-10 flex justify-center items-center ">
 
         <div className='mt-10'>
             <div className='mb-3 flex justify-center'>
               {post.category && <>
                 <Link href={`/category/${post.category}`} passHref legacyBehavior>
-                  <div className="cursor-pointer px-2 py-1 mb-2 border rounded-sm dark:border-white text-sm font-medium hover:underline duration-200 shadow-text-md text-white">
+                  <div className="cursor-pointer px-4 py-2 mb-2 border rounded-3xl dark:border-white text-sm font-medium  hover:bg-white hover:text-black duration-200 text-white">
                     {post.category}
                   </div>
                 </Link>
@@ -47,7 +47,7 @@ export default function HeaderArticle({ post, siteInfo }) {
             <NotionIcon icon={post.pageIcon} className='text-4xl mx-1' />{post.title}
           </div>
 
-          <section className="flex-wrap shadow-text-md flex text-sm justify-center mt-4 text-white dark:text-gray-400 font-light leading-8">
+          <section className="flex-wrap shadow-text-md flex text-sm justify-center mt-4 text-white dark:text-gray-200 font-light leading-8">
 
             <div className='flex justify-center dark:text-gray-200 text-opacity-70'>
               {post?.type !== 'Page' && (

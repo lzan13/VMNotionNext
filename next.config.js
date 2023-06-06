@@ -64,6 +64,11 @@ module.exports = withBundleAnalyzer({
     //     'react-dom': 'preact/compat'
     //   })
     // }
+    // Object.assign(config.server, {
+    //   port: process.env.NEXT_PUBLIC_VERSION_PORT || 9527, // 端口号
+    //   https: process.env.NEXT_PUBLIC_VERSION_SSL || false, // 是否启用 TLS + HTTP/2
+    //   open: process.env.NEXT_PUBLIC_VERSION_OPEN || false, // 是否在开发服务器启动时自动在浏览器中打开应用程序
+    // })
     return config
   }
 })
