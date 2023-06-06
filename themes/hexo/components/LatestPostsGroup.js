@@ -39,7 +39,7 @@ const LatestPostsGroup = ({ latestPosts, siteInfo }) => {
                     passHref
                     className={'my-3 flex'}>
 
-                    <div className="w-14 h-14 overflow-hidden rounded-xl relative">
+                    {/* <div className="w-14 h-14 overflow-hidden rounded-xl relative"> */}
                           {/* <Image
                             src={headerImage}
                             fill
@@ -49,8 +49,8 @@ const LatestPostsGroup = ({ latestPosts, siteInfo }) => {
                             quality={10}
                             alt={post.title} /> */}
                             {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src={`${headerImage}`} className='object-cover w-full h-full rounded-xl'/>
-                    </div>
+                            {/* <img src={`${headerImage}`} className='object-cover rounded-xl'/> */}
+                    {/* </div> */}
                     <div
                         className={
                             (selected ? ' text-indigo-400 ' : 'dark:text-gray-400 ') +
@@ -59,7 +59,7 @@ const LatestPostsGroup = ({ latestPosts, siteInfo }) => {
                         }
                     >
                         <div>
-                            <div className='text-sm text-line-2'>{post.title}</div>
+                            <div className='text-sm text-line-2 hover:underline'>{post.title}</div>
                             <div className="text-xs text-gray-500">{post.lastEditedTime}</div>
                         </div>
                     </div>
