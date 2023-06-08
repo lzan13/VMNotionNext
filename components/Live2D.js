@@ -32,7 +32,7 @@ export default function Live2D() {
 /**
  * 加载宠物
  */
-function initLive2D() { 
+function initLive2D() {
   window.removeEventListener('scroll', initLive2D)
   setTimeout(() => {
     // 加载 waifu.css live2d.min.js waifu-tips.js
