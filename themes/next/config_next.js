@@ -1,11 +1,10 @@
 const CONFIG_NEXT = {
   HOME_BANNER: false, // 首页是否显示大图及标语 [true,false]
   HOME_BANNER_Strings: [
-    '慢慢来，一步一个脚印！👣',
-    'Hi，我是一只程序猿🐵',
-    'Hi，我是一只攻城狮🦁',
-    'Hi，我是一个干饭人🍚',
-    '欢迎来到我的博客👋🎉'
+    '👋欢迎来到我的博客🎉',
+    '嗨，这里是一只90后程序猿🐵',
+    '又名攻城狮🦁',
+    '慢慢来，一步一个脚印！👣'
   ], // 首页大图标语文字
 
   NAV_TYPE: 'normal', // ['fixed','autoCollapse','normal'] 分别是固定屏幕顶部并始终显示、固定屏幕顶部且滚动时隐藏，不固定屏幕顶部
@@ -36,7 +35,8 @@ const CONFIG_NEXT = {
   WIDGET_TOC: true, // 移动端显示悬浮目录
 
   ARTICLE_RELATE_POSTS: true, // 相关文章推荐
-  ARTICLE_COPYRIGHT: true // 文章版权声明
+  ARTICLE_COPYRIGHT: true, // 文章版权声明
+  ARTICLE_INFO: true // 显示文章信息
 }
 
 export default CONFIG_NEXT

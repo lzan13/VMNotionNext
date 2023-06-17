@@ -1,11 +1,10 @@
 const CONFIG_MATERY = {
   HOME_BANNER_ENABLE: true,
   HOME_BANNER_GREETINGS: [
-    '慢慢来，一步一个脚印！👣',
-    'Hi，我是一只程序猿🐵',
-    'Hi，我是一只攻城狮🦁',
-    'Hi，我是一个干饭人🍚',
-    '欢迎来到我的博客👋🎉'
+    '👋欢迎来到我的博客🎉',
+    '嗨，这里是一只90后程序猿🐵',
+    '又名攻城狮🦁',
+    '慢慢来，一步一个脚印！👣'
   ], // 首页大图标语文字
 
   HOME_NAV_BUTTONS: true, // 首页是否显示分类大图标按钮
