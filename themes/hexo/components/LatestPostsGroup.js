@@ -1,4 +1,5 @@
 import BLOG from '@/blog.config'
+import LazyImage from '@/components/LazyImage'
 import { useGlobal } from '@/lib/global'
 // import Image from 'next/image'
 import Link from 'next/link'
@@ -29,7 +30,7 @@ const LatestPostsGroup = ({ latestPosts, siteInfo }) => {
         {latestPosts.map(post => {
           const selected = currentPath === `${BLOG.SUB_PATH}/${post.slug}`
 
-          const headerImage = post?.page_cover ? post.page_cover : siteInfo?.pageCover
+          const headerImage = post?.pageCoverThumbnail ? post.pageCoverThumbnail : siteInfo?.pageCover
 
           return (
             (<Link
@@ -51,6 +52,9 @@ const LatestPostsGroup = ({ latestPosts, siteInfo }) => {
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             {/* <img src={`${headerImage}`} className='object-cover rounded-xl'/> */}
                     {/* </div> */}
+                    <div className="w-20 h-14 overflow-hidden relative">
+                        <LazyImage src={`${headerImage}`} className='object-cover w-full h-full'/>
+                    </div>
                     <div
                         className={
                             (selected ? ' text-indigo-400 ' : 'dark:text-gray-400 ') +
@@ -59,8 +63,12 @@ const LatestPostsGroup = ({ latestPosts, siteInfo }) => {
                         }
                     >
                         <div>
+                            {/* 调整侧边推荐文章图显示 */}
                             <div className='text-sm text-line-2 hover:underline'>{post.title}</div>
                             <div className="text-xs text-gray-500">{post.lastEditedTime}</div>
+
+                            {/* <div className='line-clamp-2 menu-link'>{post.title}</div>
+                            <div className="text-gray-500">{post.lastEditedDay}</div> */}
                         </div>
                     </div>
 
